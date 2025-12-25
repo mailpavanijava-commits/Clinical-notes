@@ -23,7 +23,7 @@ class MedicationParser:
     
     ROUTE_PATTERNS = {
         
-
+        'intravenous': ['iv', 'intravenous', 'intravenously'],     
         'intravenous': ['iv', 'intravenous', 'intravenously'],
         'intramuscular': ['im', 'intramuscular'],
         'subcutaneous': ['sc', 'subq', 'subcutaneous'],
