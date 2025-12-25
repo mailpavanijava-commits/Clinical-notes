@@ -22,7 +22,8 @@ class MedicationParser:
     }
     
     ROUTE_PATTERNS = {
-        'oral': ['po', 'oral', 'by mouth', 'orally'],
+        
+        
         'intravenous': ['iv', 'intravenous', 'intravenously'],
         'intramuscular': ['im', 'intramuscular'],
         'subcutaneous': ['sc', 'subq', 'subcutaneous'],
