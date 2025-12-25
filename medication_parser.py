@@ -32,7 +32,7 @@ class MedicationParser:
     
     # Negation patterns for clinical text
     NEGATION_PATTERNS = [
-        'no ', 'not ', 'denies ', 'denied ', 'without ',
+        
         'negative for ', 'none ', 'never ', 'stopped ',
         'discontinued ', 'allergic to '
     ]
