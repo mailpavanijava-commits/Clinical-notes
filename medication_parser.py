@@ -4,7 +4,7 @@ Extracts medication information from clinical notes.
 """
 
 import re
-from typing import Dict, List, Optional
+
 
 
 class MedicationParser:
