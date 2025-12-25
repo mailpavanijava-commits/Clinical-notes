@@ -13,7 +13,7 @@ class MedicationParser:
     # Common medication patterns
     DOSE_PATTERN = r'(\d+\.?\d*)\s*(mg|mcg|g|ml|units?)'
     FREQUENCY_PATTERNS = {
-        'daily': ['daily', 'qd', 'once daily', 'once a day'],
+        
         'twice daily': ['bid', 'twice daily', 'twice a day', '2x daily'],
         'three times daily': ['tid', 'three times daily', '3x daily'],
         'four times daily': ['qid', 'four times daily', '4x daily'],
@@ -23,7 +23,7 @@ class MedicationParser:
     
     ROUTE_PATTERNS = {
         
-        
+
         'intravenous': ['iv', 'intravenous', 'intravenously'],
         'intramuscular': ['im', 'intramuscular'],
         'subcutaneous': ['sc', 'subq', 'subcutaneous'],
