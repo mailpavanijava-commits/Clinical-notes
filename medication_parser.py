@@ -148,7 +148,7 @@ class MedicationParser:
         Returns:
             True if the medication is negated, False otherwise
         """
-        text_lower = text.lower()
+        
         med_lower = medication.lower()
         
         # Find position of medication in text
@@ -177,7 +177,7 @@ class MedicationParser:
         Returns:
             List of medication dictionaries
         """
-        medications = []
+        
         found_meds = self.find_medications(text)
         
         # For each medication found, try to extract details
@@ -207,7 +207,7 @@ class MedicationParser:
         for med in self.medications:
             parts = [med['name'].capitalize()]
             
-            if med['dose']:
+            if med']:
                 parts.append(f"{med['dose']['value']}{med['dose']['unit']}")
             if med['route']:
                 parts.append(med['route'])
@@ -220,7 +220,7 @@ class MedicationParser:
 
 
 def main():
-    """Example usage of MedicationParser."""
+    """Example usag of MedicationParser."""
     sample_note = """
     Patient is a 55 y/o male with Type 2 Diabetes and Hypertension.
     Current medications:
