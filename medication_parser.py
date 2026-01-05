@@ -221,7 +221,7 @@ class MedicationParser:
 
 def main():
     """Example usag of MedicationParser."""
-    sample_note = """
+    simplified= """
     Patient is a 55 y/o male with Type 2 Diabetes and Hypertension.
     Current medications:
      500mg PO twice daily
