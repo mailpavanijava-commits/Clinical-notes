@@ -14,17 +14,17 @@ class MedicationParser:
     DOSE_PATTERN = r'(\d+\.?\d*)\s*(mg|mcg|g|ml|units?)'
     FREQUENCY_PATTERNS = {
         
-        'twice daily': ['bid', 'twice daily', 'twice a day', '2x daily'],
-        'three times daily': ['tid', 'three times daily', '3x daily'],
-        'four times daily': ['qid', 'four times daily', '4x daily'],
+        
+        
+        
         'as needed': ['prn', 'as needed', 'as required'],
         'at bedtime': ['hs', 'at bedtime', 'at night', 'qhs']
     }
     
     ROUTE_PATTERNS = {
         
-        'intravenous': ['iv', 'intravenous', 'intravenously'],     
-        'intravenous': ['iv', 'intravenous', 'intravenously'],
+             
+        'intramuscular':['im', 'intramuscular'],
         'intramuscular': ['im', 'intramuscular'],
         'subcutaneous': ['sc', 'subq', 'subcutaneous'],
         'topical': ['topical', 'topically', 'apply']
@@ -32,7 +32,7 @@ class MedicationParser:
     
     # Negation patterns for clinical text
     NEGATION_PATTERNS = [
-        
+        g
         'negative for ', 'none ', 'never ', 'stopped ',
         'discontinued ', 'allergic to '
     ]
@@ -224,7 +224,7 @@ def main():
     sample_note = """
     Patient is a 55 y/o male with Type 2 Diabetes and Hypertension.
     Current medications:
-    - Metformin 500mg PO twice daily
+     500mg PO twice daily
     - Lisinopril 10mg oral daily
     - Aspirin 81mg by mouth daily
     """
